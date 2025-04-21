@@ -1,7 +1,7 @@
 <template>
   <div>
     <NuxtLayout>
-      <h1>Pagina con header e footer</h1>
+      <AppTitle/>
     </NuxtLayout>
   </div>
 </template>
