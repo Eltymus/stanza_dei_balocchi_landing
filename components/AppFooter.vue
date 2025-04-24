@@ -1,6 +1,6 @@
 <template>
   <div
-  class="flex items-center bg-white p-4 fixed bottom-0   w-full shadow-md"
+  class="flex items-center bg-white p-4 fixed bottom-0   w-full border-t-black border-t"
   >
 
     <div>
