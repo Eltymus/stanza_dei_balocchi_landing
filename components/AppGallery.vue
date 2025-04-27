@@ -1,7 +1,9 @@
 <template>
-  <div class="flex flex-row shadow-inner bg-white">
+  <div
+    class="flex flex-col max-w-7xl mx-auto md:flex-row shadow-inner bg-white bg-gradient-to-r from-slate-50 to-lime-100"
+  >
     <div
-      class="w-2/5 flex flex-col items-center text-center justify-center p-10"
+      class="md:w-1/2 sm:w-full flex flex-col items-center text-center justify-center p-10"
     >
       <h2 class="text-3xl font-extrabold p-5">Eventi per i ragazzi</h2>
       <p>
@@ -10,38 +12,43 @@
       </p>
     </div>
 
-    <Carousel id="gallery" v-bind="galleryConfig" v-model="currentSlide">
-      <Slide v-for="image in images" :key="image.id">
-        <img :src="image.url" alt="Gallery Image" class="gallery-image" />
-      </Slide>
-    </Carousel>
+    <div class="flex flex-col md:w-1/2 sm:w-fit m-4">
+      <Carousel v-bind="galleryConfig" v-model="currentSlide">
+        <Slide v-for="image in images" :key="image.id">
+          <img
+            :src="image.url"
+            alt="Immagine eventi dei ragazzi"
+            class="rounded-3xl m-4 p-2 border-2 bg-white lg:rotate-3"
+          />
+        </Slide>
+      </Carousel>
 
-    <Carousel id="thumbnails" v-bind="thumbnailsConfig" v-model="currentSlide">
-      <Slide v-for="image in images" :key="image.id">
-        <template #default="{ currentIndex, isActive }">
-          <div
-            :class="['thumbnail', { 'is-active': isActive }]"
-            @click="slideTo(currentIndex)"
-          >
-            <img
-              :src="image.url"
-              alt="Thumbnail Image"
-              class="thumbnail-image"
-            />
-          </div>
-        </template>
-      </Slide>
+      <Carousel v-bind="thumbnailsConfig" v-model="currentSlide">
+        <Slide v-for="image in images" :key="image.id">
+          <template #default="{ currentIndex, isActive }">
+            <div
+              :class="['thumbnail', { 'is-active': isActive }]"
+              @click="slideTo(currentIndex)"
+              class="justify-center items-center cursor-pointer"
+            >
+              <img
+                :src="image.url"
+                alt="Galleria immagini"
+                class="rounded-3xl p-2 border-2 bg-white"
+              />
+            </div>
+          </template>
+        </Slide>
 
-      <template #addons>
-        <Navigation />
-      </template>
-    </Carousel>
+        <template #addons> </template>
+      </Carousel>
+    </div>
   </div>
 </template>
 
 <script setup>
 import "vue3-carousel/carousel.css";
-import { Carousel, Slide, Navigation } from "vue3-carousel";
+import { Carousel, Slide } from "vue3-carousel";
 import { ref } from "vue";
 
 const currentSlide = ref(0);
@@ -50,58 +57,30 @@ const slideTo = (nextSlide) => (currentSlide.value = nextSlide);
 
 const galleryConfig = {
   itemsToShow: 1,
-  wrapAround: true,
+  wrapAround: false,
   slideEffect: "fade",
   mouseDrag: false,
   touchDrag: false,
-  height: 320,
 };
 
 const thumbnailsConfig = {
-  height: 80,
-  itemsToShow: 6,
-  wrapAround: true,
+  itemsToShow: 3,
   touchDrag: false,
-  gap: 10,
+  gap: 13,
 };
 
-const images = Array.from({ length: 10 }, (_, index) => ({
-  id: index + 1,
-  url: `https://picsum.photos/seed/${Math.random()}/800/600`,
-}));
+const images = [
+  {
+    id: 1,
+    url: "/img/ragazzi1.jpg",
+  },
+  {
+    id: 2,
+    url: "/img/ragazzi2.jpg",
+  },
+  {
+    id: 3,
+    url: "/img/ragazzi3.jpg",
+  },
+];
 </script>
-
-<style>
-.carousel {
-  --vc-nav-background: rgba(255, 255, 255, 0.7);
-  --vc-nav-border-radius: 100%;
-}
-
-img {
-  border-radius: 8px;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.gallery-image {
-  border-radius: 16px;
-}
-
-#thumbnails {
-  margin-top: 10px;
-}
-
-.thumbnail {
-  height: 100%;
-  width: 100%;
-  cursor: pointer;
-  opacity: 0.6;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.thumbnail.is-active,
-.thumbnail:hover {
-  opacity: 1;
-}
-</style>
