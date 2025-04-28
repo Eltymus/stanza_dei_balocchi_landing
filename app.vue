@@ -1,7 +1,3 @@
-<script setup lang="ts">
-import { _right } from "#tailwind-config/theme/backgroundPosition";
-</script>
-
 <template>
   <div>
     <NuxtLayout>
@@ -22,10 +18,11 @@ import { _right } from "#tailwind-config/theme/backgroundPosition";
         :right="false"
         :title="'Eventi per i genitori'"
         :subtitle="'Genitori uniti per migliorare la qualità di vita dei figli.'"
-        :image1="'/img/genitori1.jpg'"
-        :image2="'/img/genitori2.jpg'"
-        :image3="'/img/genitori4.jpg'"
+        :image1="'/img/genitori3.jpg'"
+        :image2="'/img/genitori7.jpg'"
+        :image3="'/img/genitori5.jpg'"
       />
+      <AppSocialbar imageBg="'/img/Mano colorata senza sfondo.png'" />
     </NuxtLayout>
   </div>
 </template>

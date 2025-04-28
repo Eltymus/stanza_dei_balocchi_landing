@@ -34,7 +34,6 @@
 import "vue3-carousel/carousel.css";
 import { Carousel, Slide } from "vue3-carousel";
 import { ref } from "vue";
-import { defineProps } from "vue";
 
 const props = defineProps({
   title: String,
