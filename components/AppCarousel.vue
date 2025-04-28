@@ -4,7 +4,7 @@
       <img
         :src="image.url"
         alt="Immagine eventi dei ragazzi"
-        class="rounded-3xl m-4 p-2 border-2 bg-white lg:rotate-3"
+        class="rounded-3xl m-4 p-2 border-2 bg-white"
       />
     </Slide>
   </Carousel>
