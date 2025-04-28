@@ -5,10 +5,9 @@
     <div
       class="md:w-1/2 sm:w-full flex flex-col items-center text-center justify-center p-10"
     >
-      <h2 class="text-3xl font-extrabold p-5">Eventi per i ragazzi</h2>
+      <h2 class="text-3xl font-extrabold p-5">{{ title }}</h2>
       <p>
-        Organizzazione di eventi settimanali per unire chi fa parte della stanza
-        e aiutarli a sviluppare nuove abilità.
+        {{ subtitle }}
       </p>
     </div>
 
@@ -50,6 +49,15 @@
 import "vue3-carousel/carousel.css";
 import { Carousel, Slide } from "vue3-carousel";
 import { ref } from "vue";
+import { defineProps } from "vue";
+
+const props = defineProps({
+  title: String,
+  subtitle: String,
+  image1: String,
+  image2: String,
+  image3: String,
+});
 
 const currentSlide = ref(0);
 
@@ -72,15 +80,15 @@ const thumbnailsConfig = {
 const images = [
   {
     id: 1,
-    url: "/img/ragazzi1.jpg",
+    url: props.image1,
   },
   {
     id: 2,
-    url: "/img/ragazzi2.jpg",
+    url: props.image2,
   },
   {
     id: 3,
-    url: "/img/ragazzi3.jpg",
+    url: props.image3,
   },
 ];
 </script>
