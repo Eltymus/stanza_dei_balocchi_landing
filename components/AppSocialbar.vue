@@ -10,15 +10,18 @@
           collaborare con noi
         </p>
       </div>
-      <div class="flex flex-row md:w-1/3 mx-4 justify-center p-5">
-        <AppSocialCard
-          :sociallink="'https://www.facebook.com/lastanzadeibalocchinoprofit/?locale=it_IT'"
-          :socialicon="['fab', 'facebook-f']"
-        />
-        <AppSocialCard
-          :sociallink="'https://www.instagram.com/_la_stanza_dei_balocchi/?fbclid=IwY2xjawJ8efVleHRuA2FlbQIxMAABHs_dNsTL4uJbOMfDT6DlPqXW8UZSoqooxbOzokRkaA_0vnF7m5YrzYSrrD4H_aem_WpvYTpNxxI7aWlOVD-a_HQ# '"
-          :socialicon="['fab', 'instagram']"
-        />
+      <div class="flex flex-col md:w-1/3 mx-4 justify-center items-center p-5">
+        <AppCopy :socialicon="['fa', 'circle-info']" />
+        <div class="flex flex-row m-4">
+          <AppSocialCard
+            :sociallink="'https://www.facebook.com/lastanzadeibalocchinoprofit/?locale=it_IT'"
+            :socialicon="['fab', 'facebook-f']"
+          />
+          <AppSocialCard
+            :sociallink="'https://www.instagram.com/_la_stanza_dei_balocchi/?fbclid=IwY2xjawJ8efVleHRuA2FlbQIxMAABHs_dNsTL4uJbOMfDT6DlPqXW8UZSoqooxbOzokRkaA_0vnF7m5YrzYSrrD4H_aem_WpvYTpNxxI7aWlOVD-a_HQ# '"
+            :socialicon="['fab', 'instagram']"
+          />
+        </div>
       </div>
       <div class="flex flex-row">
         <img
