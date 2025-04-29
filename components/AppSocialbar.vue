@@ -1,6 +1,9 @@
 <template>
-  <div :style="{ backgroundImage: `url(${imageBg})` }" class="bg-cover">
-    <div class="max-w-7xl mx-auto flex flex-row m-4 backdrop-blur-sm">
+  <div
+    :style="{ backgroundImage: `url(${imageBg})` }"
+    class="bg-cover max-w-7xl mx-auto"
+  >
+    <div class="flex flex-row m-4 backdrop-blur-sm">
       <div class="flex flex-col w-1/3 text-center justify-center">
         <h1 class="text-3xl font-extrabold p-5">Unisciti a noi o aiutaci</h1>
         <p>
@@ -10,9 +13,18 @@
       </div>
       <div class="flex flex-col w-1/3">
         <AppSocialCard
+          :socialname="'Stanzadeibalocchi@gmail.com'"
+          :socialicon="['fas', 'circle-info']"
+        />
+        <AppSocialCard
           :socialname="'Pagina Facebook'"
           :sociallink="'https://www.facebook.com/lastanzadeibalocchinoprofit/?locale=it_IT'"
-          :socialicon="'fa-brands fa-facebook'"
+          :socialicon="['fab', 'facebook-f']"
+        />
+        <AppSocialCard
+          :socialname="'Pagina Instagram'"
+          :sociallink="'https://www.instagram.com/_la_stanza_dei_balocchi/?fbclid=IwY2xjawJ8efVleHRuA2FlbQIxMAABHs_dNsTL4uJbOMfDT6DlPqXW8UZSoqooxbOzokRkaA_0vnF7m5YrzYSrrD4H_aem_WpvYTpNxxI7aWlOVD-a_HQ# '"
+          :socialicon="['fab', 'instagram']"
         />
       </div>
     </div>
