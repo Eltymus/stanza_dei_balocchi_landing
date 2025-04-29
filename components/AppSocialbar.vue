@@ -1,17 +1,17 @@
 <template>
-  <div
-    :style="{ backgroundImage: `url(${imageBg})` }"
-    class="bg-cover max-w-7xl mx-auto"
-  >
-    <div class="flex flex-row m-4 backdrop-blur-sm">
-      <div class="flex flex-col w-1/3 text-center justify-center">
+  <div class="bg-cover bg-blue-400 max-w-7xl mx-auto">
+    <div class="flex flex-row p-4 backdrop-blur-sm">
+      <div
+        class="flex flex-col w-1/3 text-center justify-center text-white px-2"
+      >
         <h1 class="text-3xl font-extrabold p-5">Unisciti a noi o aiutaci</h1>
         <p>
           Entra a far parte della stanza o contattaci se sei interessato a
           collaborare con noi
         </p>
       </div>
-      <div class="flex flex-col w-1/3">
+      <div class="w-1/3"></div>
+      <div class="flex flex-col w-1/3 my-4">
         <AppSocialCard
           :socialname="'Stanzadeibalocchi@gmail.com'"
           :socialicon="['fas', 'circle-info']"
@@ -31,8 +31,4 @@
   </div>
 </template>
 
-<script>
-export default {
-  props: ["imageBg"],
-};
-</script>
+<script></script>

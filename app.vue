@@ -6,6 +6,7 @@
         :subtitle="'Attività ludico educative per bambini e ragazzi autistici e con altre disabilità '"
         imageBg="'/img/Mano colorata senza sfondo.png'"
       />
+      <AppSocialbar />
       <AppGallery
         :right="true"
         :title="'Eventi per i ragazzi'"
@@ -22,7 +23,6 @@
         :image2="'/img/genitori7.jpg'"
         :image3="'/img/genitori5.jpg'"
       />
-      <AppSocialbar imageBg="'/img/Mano colorata senza sfondo.png'" />
     </NuxtLayout>
   </div>
 </template>
