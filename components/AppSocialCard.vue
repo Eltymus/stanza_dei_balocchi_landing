@@ -1,7 +1,7 @@
 <template>
   <a :href="sociallink" target="_blank" class="p-3 group w-full my-2">
     <div
-      class="bg-white rounded-full shadow-2xl w-24 h-24 flex items-center justify-center transition"
+      class="bg-white rounded-full shadow-2xl w-[100px] h-[100px] flex items-center justify-center transition"
     >
       <font-awesome-icon
         :icon="socialicon"

@@ -18,9 +18,14 @@
           :description="'Copia il codice fiscale per la tua dichiarazione dei redditi'"
           :socialicon="['fas', 'copy']"
           :contact="'95635720014'"
+          :button="false"
         />
         <div class="flex flex-row">
-          <AppCopy :socialicon="['fas', 'envelope']" />
+          <AppCopy
+            :socialicon="['fas', 'envelope']"
+            :contact="'mailstanza@gmail.com'"
+            :button="true"
+          />
           <AppSocialCard
             :sociallink="'https://www.facebook.com/lastanzadeibalocchinoprofit/?locale=it_IT'"
             :socialicon="['fab', 'facebook-f']"

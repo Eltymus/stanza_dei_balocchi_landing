@@ -14,7 +14,11 @@
           </h2>
           <p
             ref="foo"
-            class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-blue-600 font-semibold"
+            :class="
+              button
+                ? 'absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center opacity-0 group-hover:opacity-0 transition-opacity duration-200 text-blue-600 font-semibold'
+                : 'absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-blue-600 font-semibold '
+            "
           >
             {{ contact }}
           </p>
@@ -26,7 +30,7 @@
 
 <script>
 export default {
-  props: ["socialicon", "contact", "description"],
+  props: ["socialicon", "contact", "description", "button"],
   mounted() {
     this.$refs.copy.addEventListener("click", () => {
       navigator.clipboard.writeText(this.contact);
