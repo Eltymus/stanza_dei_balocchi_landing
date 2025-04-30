@@ -2,12 +2,12 @@
   <div
     :class="
       right
-        ? 'flex flex-col max-w-7xl mx-auto md:flex-row shadow-inner bg-white bg-gradient-to-r from-slate-50 to-blue-100'
-        : 'flex flex-col max-w-7xl mx-auto md:flex-row-reverse shadow-inner bg-white bg-gradient-to-r to-slate-50 from-blue-100'
+        ? 'flex flex-col max-w-7xl mx-auto md:flex-row shadow-inner bg-white '
+        : 'flex flex-col max-w-7xl mx-auto md:flex-row-reverse shadow-inner bg-white '
     "
   >
     <div
-      class="flex flex-col text-center justify-center items-center md:w-1/2 sm:w-fit m-4"
+      class="flex flex-col text-center justify-center items-center md:w-1/2 m-4"
     >
       <h2 class="text-3xl font-extrabold p-5">
         {{ title }}

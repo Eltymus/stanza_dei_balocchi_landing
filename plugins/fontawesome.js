@@ -6,11 +6,19 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import { faCircleInfo } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faCircleInfo } from "@fortawesome/free-solid-svg-icons";
+import { faCopy } from "@fortawesome/free-solid-svg-icons";
 
 export default defineNuxtPlugin((nuxtApp) => {
   // Aggiungi le icone alla libreria
-  library.add(faFacebookF, faInstagram, faWhatsapp, faCircleInfo);
+  library.add(
+    faFacebookF,
+    faInstagram,
+    faWhatsapp,
+    faCircleInfo,
+    faEnvelope,
+    faCopy
+  );
 
   // Registra FontAwesomeIcon come componente globale
   nuxtApp.vueApp.component("FontAwesomeIcon", FontAwesomeIcon);

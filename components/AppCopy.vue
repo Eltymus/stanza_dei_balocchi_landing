@@ -1,5 +1,5 @@
 <template>
-  <button ref="copy" class="p-3 group w-full my-2">
+  <button ref="copy" class="p-3 group w-full my-2 max-w-md mx-auto">
     <div class="bg-white rounded-full shadow-2xl transition-all duration-300">
       <div class="w-full p-4 flex flex-row items-center">
         <font-awesome-icon
