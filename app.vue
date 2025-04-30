@@ -6,7 +6,10 @@
         :subtitle="'Attività ludico educative per bambini e ragazzi autistici e con altre disabilità '"
         imageBg="'/img/Mano colorata senza sfondo.png'"
       />
-      <AppSocialbar />
+      <AppSocialbar
+        :title="'Unisciti a noi o aiutaci'"
+        :subtitle="'Entra a far parte della stanza o contattaci se sei interessato a collaborare con noi'"
+      />
       <AppGallery
         :right="true"
         :title="'Eventi per i ragazzi'"

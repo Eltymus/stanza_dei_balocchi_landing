@@ -4,12 +4,13 @@
       class="flex md:flex-row flex-col p-5 backdrop-blur-sm justify-center items-center"
     >
       <div
-        class="flex flex-col md:w-1/3 sm:w-full text-center justify-center text-white px-4"
+        class="flex flex-col md:w-1/3 sm:w-full text-center justify-center text-white p-4"
       >
-        <h1 class="text-3xl font-extrabold p-5">Unisciti a noi o aiutaci</h1>
+        <h1 class="text-3xl font-extrabold p-5">
+          {{ title }}
+        </h1>
         <p>
-          Entra a far parte della stanza o contattaci se sei interessato a
-          collaborare con noi
+          {{ subtitle }}
         </p>
       </div>
       <div class="flex flex-col md:w-1/3 justify-center items-center">
@@ -45,4 +46,8 @@
   </div>
 </template>
 
-<script></script>
+<script>
+export default {
+  props: ["subtitle", "title"],
+};
+</script>
