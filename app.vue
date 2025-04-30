@@ -7,6 +7,7 @@
         imageBg="'/img/Mano colorata senza sfondo.png'"
       />
       <AppSocialbar
+        id="social"
         :title="'Unisciti a noi o aiutaci'"
         :subtitle="'Entra a far parte della stanza o contattaci se sei interessato a collaborare con noi'"
       />
