@@ -1,8 +1,10 @@
 <template>
   <div class="bg-cover bg-blue-400 max-w-7xl mx-auto">
-    <div class="flex md:flex-row sm:flex-col items-center p-4 backdrop-blur-sm">
+    <div
+      class="flex md:flex-row flex-col p-5 backdrop-blur-sm justify-center items-center"
+    >
       <div
-        class="flex flex-col md:w-1/3 sm:w-full text-center justify-center text-white px-2"
+        class="flex flex-col md:w-1/3 sm:w-full text-center justify-center text-white px-4"
       >
         <h1 class="text-3xl font-extrabold p-5">Unisciti a noi o aiutaci</h1>
         <p>
@@ -10,9 +12,18 @@
           collaborare con noi
         </p>
       </div>
-      <div class="flex flex-col md:w-1/3 mx-4 justify-center items-center p-5">
-        <AppCopy :socialicon="['fa', 'circle-info']" />
-        <div class="flex flex-row m-4">
+      <div class="flex flex-col md:w-1/3 justify-center items-center">
+        <AppCopy
+          :description="'Copia il codice fiscale per la tua dichiarazione dei redditi'"
+          :socialicon="['fa', 'circle-info']"
+          :contact="'95635720014'"
+        />
+        <AppCopy
+          :socialicon="['fa', 'circle-info']"
+          :contact="'mailstanza@gmail.com'"
+          :description="'Contattaci alla nostra mail'"
+        />
+        <div class="flex flex-row">
           <AppSocialCard
             :sociallink="'https://www.facebook.com/lastanzadeibalocchinoprofit/?locale=it_IT'"
             :socialicon="['fab', 'facebook-f']"
@@ -23,7 +34,7 @@
           />
         </div>
       </div>
-      <div class="flex flex-row">
+      <div class="flex flex-row m-5">
         <img
           src="/img/stanzadeibalocchi5x1000.jpg"
           alt="Immagine con informazioni sul 5x1000"
