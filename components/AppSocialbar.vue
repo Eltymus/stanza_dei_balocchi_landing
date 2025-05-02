@@ -13,7 +13,7 @@
           {{ subtitle }}
         </p>
       </div>
-      <div class="flex flex-col md:w-1/3 justify-center items-center">
+      <div class="flex flex-col justify-center items-center">
         <AppCopy
           :description="'Copia il codice fiscale per la tua dichiarazione dei redditi'"
           :socialicon="['fas', 'copy']"
@@ -36,7 +36,7 @@
           />
         </div>
       </div>
-      <div class="flex flex-row m-5">
+      <div class="flex flex-row m-5 md:hidden shadow-2xl">
         <img
           src="/img/stanzadeibalocchi5x1000.jpg"
           alt="Immagine con informazioni sul 5x1000"

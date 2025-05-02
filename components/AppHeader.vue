@@ -9,7 +9,8 @@
         />
       </div>
       <a
-        href="#social"
+        href="#"
+        @click.prevent="scrollToSocial"
         class="p-2 font-bold hover:text-white hover:bg-blue-600 rounded-full delay-150 transition-colors text-center justify-center"
         >Contattaci</a
       >
@@ -17,10 +18,11 @@
   </div>
 </template>
 
-<script>
-const element = document.getElementById("social");
-
-this.$refs.social.addEventListener("click", () => {
-  element.scrollIntoView();
-});
+<script setup>
+const scrollToSocial = () => {
+  const el = document.getElementById("social");
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth" });
+  }
+};
 </script>
