@@ -8,6 +8,7 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faCircleInfo } from "@fortawesome/free-solid-svg-icons";
 import { faCopy } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export default defineNuxtPlugin((nuxtApp) => {
   // Aggiungi le icone alla libreria
@@ -17,7 +18,8 @@ export default defineNuxtPlugin((nuxtApp) => {
     faWhatsapp,
     faCircleInfo,
     faEnvelope,
-    faCopy
+    faCopy,
+    faLinkedin
   );
 
   // Registra FontAwesomeIcon come componente globale
