@@ -27,10 +27,12 @@
             :button="true"
           />
           <AppSocialCard
+            :small="false"
             :sociallink="'https://www.facebook.com/lastanzadeibalocchinoprofit/?locale=it_IT'"
             :socialicon="['fab', 'facebook-f']"
           />
           <AppSocialCard
+            :small="false"
             :sociallink="'https://www.instagram.com/_la_stanza_dei_balocchi/?fbclid=IwY2xjawJ8efVleHRuA2FlbQIxMAABHs_dNsTL4uJbOMfDT6DlPqXW8UZSoqooxbOzokRkaA_0vnF7m5YrzYSrrD4H_aem_WpvYTpNxxI7aWlOVD-a_HQ# '"
             :socialicon="['fab', 'instagram']"
           />
