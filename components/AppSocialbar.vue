@@ -38,7 +38,7 @@
           />
         </div>
       </div>
-      <div class="flex flex-row m-5 md:hidden shadow-2xl">
+      <div class="flex flex-row m-5 shadow-2xl">
         <img
           src="/img/stanzadeibalocchi5x1000.jpg"
           alt="Immagine con informazioni sul 5x1000"
