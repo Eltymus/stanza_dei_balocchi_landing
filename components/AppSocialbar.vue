@@ -23,7 +23,7 @@
         <div class="flex flex-row">
           <AppCopy
             :socialicon="['fas', 'envelope']"
-            :contact="'mailstanza@gmail.com'"
+            :contact="'stanzadeibalocchi@gmail.com'"
             :button="true"
           />
           <AppSocialCard
