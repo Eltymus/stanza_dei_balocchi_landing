@@ -33,7 +33,9 @@ export default {
   props: ["socialicon", "contact", "description", "button"],
   mounted() {
     this.$refs.copy.addEventListener("click", () => {
-      navigator.clipboard.writeText(this.contact);
+      navigator.clipboard.writeText(this.contact).then(() => {
+        alert(this.contact + " copiato e pronto all'incolla!");
+      });
     });
   },
 };
