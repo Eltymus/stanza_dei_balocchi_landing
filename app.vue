@@ -5,6 +5,8 @@
         :title="'La stanza dei Balocchi'"
         :subtitle="'Attività ludico educative per bambini e ragazzi autistici e con altre disabilità '"
         imageBg="'/img/Mano colorata senza sfondo.png'"
+        :heroImg="'/img/logo_hero.png'"
+        altImg="'Mani colorate con tempera e i palmi rivolti verso lo schermo'"
       />
       <AppSocialbar
         id="social"

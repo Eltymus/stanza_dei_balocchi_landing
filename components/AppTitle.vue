@@ -14,11 +14,7 @@
           {{ subtitle }}
         </h2>
 
-        <img
-          src="/img/logo no words.png"
-          alt="mani con palmo e dita colorate puntano verso l'alto."
-          class="w-96"
-        />
+        <img :src="heroImg" :alt="altImg" class="w-96" />
       </div>
     </div>
   </div>
@@ -26,6 +22,6 @@
 
 <script>
 export default {
-  props: ["title", "subtitle", "imageBg"],
+  props: ["title", "subtitle", "imageBg", "heroImg", "altImg"],
 };
 </script>
