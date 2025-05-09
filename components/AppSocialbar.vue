@@ -42,7 +42,7 @@
         <img
           src="/img/stanzadeibalocchi5x1000.jpg"
           alt="Immagine con informazioni sul 5x1000"
-          class="border-white border-8 rounded-xl h-80"
+          class="border-white border-8 rounded-xl h-80 w-80"
         />
       </div>
     </div>
