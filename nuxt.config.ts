@@ -8,6 +8,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   pages: false,
   modules: ["@nuxtjs/tailwindcss"],
+  css: ["@/assets/css/tailwind.css"],
   postcss: {
     plugins: {
       "postcss-color-gray": {},
