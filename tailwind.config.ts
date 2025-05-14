@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
 
-export default <Partial<Config>>{
+const config: Config = {
   theme: {
     extend: {},
   },
@@ -15,3 +15,5 @@ export default <Partial<Config>>{
     "./nuxt.config.{js,ts}",
   ],
 };
+
+export default config;
