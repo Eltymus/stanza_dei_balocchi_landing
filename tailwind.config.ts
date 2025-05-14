@@ -13,6 +13,13 @@ const config: Config = {
     "./app.vue",
     "./plugins/**/*.{js,ts}",
     "./nuxt.config.{js,ts}",
+    "./content/**/*.md", // Aggiungi percorsi mancanti
+    "./assets/**/*.css", // Se usi CSS personalizzati
+  ],
+  safelist: [
+    "text-red-500",
+    "bg-blue-500",
+    "hover:bg-green-500", // Aggiungi le classi dinamiche qui
   ],
 };
 

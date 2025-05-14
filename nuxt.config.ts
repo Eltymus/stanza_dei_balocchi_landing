@@ -18,5 +18,9 @@ export default defineNuxtConfig({
       "postcss-color-gray": {},
     },
   },
-  tailwindcss: { exposeConfig: true },
+  tailwindcss: {
+    exposeConfig: true,
+    configPath: "tailwind.config.ts",
+    viewer: false, // Disabilita il viewer se non necessario
+  },
 });
