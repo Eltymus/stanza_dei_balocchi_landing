@@ -4,6 +4,10 @@ export default defineNuxtConfig({
   nitro: {
     preset: "static",
   },
+  app: {
+    baseURL: "/",
+    buildAssetsDir: "/_nuxt/",
+  },
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
   pages: false,
