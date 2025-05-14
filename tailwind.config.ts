@@ -1,7 +1,10 @@
 import type { Config } from "tailwindcss";
 
 export default <Partial<Config>>{
-  theme: {},
+  theme: {
+    extend: {},
+  },
+  plugins: [],
   content: [
     "./components/*.{vue,js,ts}",
     "./components/**/*.{vue,js,ts}",
