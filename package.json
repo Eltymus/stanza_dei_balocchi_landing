@@ -15,7 +15,6 @@
     "@fortawesome/free-regular-svg-icons": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/vue-fontawesome": "^3.0.8",
-    "@nuxtjs/tailwindcss": "latest",
     "nuxt": "^3.16.2",
     "nuxt-app": "file:",
     "vue": "^3.5.13",
@@ -24,7 +23,7 @@
     "vue3-clipboard": "^1.0.0"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "latest",
+    "@nuxtjs/tailwindcss": "^6.14.0",
     "autoprefixer": "^10.4.21",
     "nuxt": "latest",
     "postcss-color-gray": "latest"
