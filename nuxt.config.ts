@@ -20,7 +20,6 @@ export default defineNuxtConfig({
   },
   tailwindcss: {
     exposeConfig: true,
-    configPath: "tailwind.config.ts",
-    viewer: false, // Disabilita il viewer se non necessario
+    configPath: "tailwind.config.js",
   },
 });
