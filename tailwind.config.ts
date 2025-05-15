@@ -5,7 +5,7 @@ const config: Config = {
     extend: {},
   },
   plugins: [],
-  content: ["./app.vue"],
+  content: [],
   safelist: [],
 };
 
