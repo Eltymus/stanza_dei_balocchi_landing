@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import tailwindcss from "@tailwindcss/vite"; // HERE
+
 export default defineNuxtConfig({
   ssr: false,
   nitro: {
@@ -11,15 +13,8 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
   pages: false,
-  modules: ["@nuxtjs/tailwindcss"],
-  css: ["@/assets/css/tailwind.css"],
-  postcss: {
-    plugins: {
-      "postcss-color-gray": {},
-    },
-  },
-  tailwindcss: {
-    exposeConfig: true,
-    configPath: "tailwind.config.js",
+  css: ["~/assets/css/tailwind.css"], // HERE
+  vite: {
+    plugins: [tailwindcss()],
   },
 });
