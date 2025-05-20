@@ -10,7 +10,7 @@
         class="bg-blackA9 data-[state=open]:animate-overlayShow fixed inset-0 z-30"
       />
       <AlertDialogContent
-        class="z-30 data-[state=open]:animate-contentShow fixed top-1/2 left-1/2 translate-x-1/2 translate-y-1/2 rounded-[6px] bg-white shadow-xl focus:outline-none"
+        class="z-30 data-[state=open]:animate-contentShow fixed top-1/2 left-1/2 translate-x-1/2 translate-y- rounded-[6px] bg-white shadow-xl focus:outline-none"
       >
         <AlertDialogTitle class="m-0 font-semibold">
           Privacy Policy
