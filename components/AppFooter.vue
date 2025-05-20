@@ -18,6 +18,10 @@
       <p class="text-sm">associazione no profit per il sociale</p>
     </div>
 
+    <div class="flex flex-col items-center justify-center">
+      <AppPrivacyPolicy />
+    </div>
+
     <button
       @click="showDevInfo = !showDevInfo"
       class="mt-4 flex items-center justify-center text-sm font-bold bg-black hover:bg-gray-800 px-4 py-2 transition-colors"
