@@ -16,9 +16,6 @@
         />
       </div>
       <p class="text-sm">associazione no profit per il sociale</p>
-    </div>
-
-    <div class="flex flex-col items-center justify-center">
       <AppPrivacyPolicy />
     </div>
 
