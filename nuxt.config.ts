@@ -16,4 +16,5 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  modules: ["@nuxtjs/tailwindcss"],
 });
