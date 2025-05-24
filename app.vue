@@ -9,7 +9,6 @@
         altImg="'Mani colorate con tempera e i palmi rivolti verso lo schermo'"
       />
       <AppSocialbar
-        class="bg-blue-500"
         id="social"
         :title="'Unisciti a noi o aiutaci'"
         :subtitle="'Entra a far parte della stanza o contattaci se sei interessato a collaborare con noi'"
