@@ -8,8 +8,7 @@ export default defineNuxtConfig({
     preset: "static",
   },
   app: {
-    baseURL: "/stanza_dei_balocchi_landing/",
-    buildAssetsDir: "/_nuxt/",
+    baseURL: "/",
   },
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
