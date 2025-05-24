@@ -2,7 +2,6 @@
   <div>
     <NuxtLayout>
       <AppTitle
-        class="static"
         :title="'La stanza dei Balocchi'"
         :subtitle="'Attività ludico educative per bambini e ragazzi autistici e con altre disabilità '"
         imageBg="'/img/Mano colorata senza sfondo.png'"
@@ -10,6 +9,7 @@
         altImg="'Mani colorate con tempera e i palmi rivolti verso lo schermo'"
       />
       <AppSocialbar
+        class="bg-blue-500"
         id="social"
         :title="'Unisciti a noi o aiutaci'"
         :subtitle="'Entra a far parte della stanza o contattaci se sei interessato a collaborare con noi'"
