@@ -34,6 +34,7 @@
 </template>
 
 <script setup lang="ts">
+import "assets/css/tailwind.css";
 useSeoMeta({
   title:
     "La Stanza dei Balocchi – Supporto alle famiglie con persone autistiche",
