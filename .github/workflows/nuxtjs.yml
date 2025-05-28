@@ -73,7 +73,7 @@ jobs:
           rm -rf node_modules package-lock.json 
           npm install
       - name: Static HTML export with Nuxtb
-        run: npm run generate
+        run: NODE_ENV=production npm run generate
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
