@@ -2,7 +2,7 @@
 import tailwindcss from "@tailwindcss/vite"; // HERE
 
 export default defineNuxtConfig({
-  ssr: false,
+  ssr: true,
   pages: false,
   nitro: {
     preset: "static",
