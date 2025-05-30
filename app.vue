@@ -17,17 +17,17 @@
         :right="true"
         :title="'Attività per i bambini e ragazzi'"
         :subtitle="'Organizzazione di eventi settimanali per unire chi fa parte della stanza e aiutarli a sviluppare nuove abilità.'"
-        :image1="'/img/ragazzi1.jpg'"
-        :image2="'/img/ragazzi2.jpg'"
-        :image3="'/img/ragazzi3.jpg'"
+        :image1="'/img/official_img_ragazzi_01.jpg'"
+        :image2="'/img/official_img_ragazzi_02.jpg'"
+        :image3="'/img/official_img_ragazzi_03.jpg'"
       />
       <AppGallery
         :right="false"
         :title="'Attività per genitori e famiglie'"
         :subtitle="'Genitori uniti per migliorare la qualità di vita dei figli.'"
-        :image1="'/img/genitori3.jpg'"
-        :image2="'/img/genitori7.jpg'"
-        :image3="'/img/genitori5.jpg'"
+        :image1="'/img/official_img_genitori_01.jpg'"
+        :image2="'/img/official_img_genitori_02.jpg'"
+        :image3="'/img/official_img_genitori_03.jpg'"
       />
     </NuxtLayout>
   </div>
