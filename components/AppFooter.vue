@@ -16,6 +16,7 @@
         />
       </div>
       <p class="text-sm">associazione no profit per il sociale</p>
+      <AppPrivacyPolicy />
     </div>
 
     <button
