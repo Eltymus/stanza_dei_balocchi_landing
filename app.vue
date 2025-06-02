@@ -12,6 +12,8 @@
         id="social"
         :title="'Unisciti a noi o aiutaci'"
         :subtitle="'Entra a far parte della stanza o contattaci se sei interessato a collaborare con noi'"
+        bannerImg="/img/stanzadeibalocchi5x1000.jpg"
+        altbannerImg="Immagine del banner per il 5x1000 della Stanza dei Balocchi"
       />
       <AppGallery
         :right="true"

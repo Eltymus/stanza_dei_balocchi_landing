@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-white w-full shadow-md">
-    <div class="max-w-7xl mx-auto p-3 px-7 flex justify-between items-center">
+  <div class="bg-white w-full shadow-sm max-w-7xl mx-auto">
+    <div class="p-3 px-7 flex justify-between items-center">
       <div>
         <img
           src="/public/img/logo_stanza_dei_balocchi.jpg"

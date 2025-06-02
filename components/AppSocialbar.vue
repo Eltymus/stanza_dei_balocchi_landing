@@ -27,6 +27,7 @@
             :button="true"
           />
           <AppSocialCard
+            class="z-10"
             :small="false"
             :sociallink="'https://www.facebook.com/lastanzadeibalocchinoprofit/?locale=it_IT'"
             :socialicon="['fab', 'facebook-f']"
@@ -38,10 +39,10 @@
           />
         </div>
       </div>
-      <div class="flex flex-row m-5 shadow-2xl">
+      <div class="flex flex-row m-5 shadow-2xl md:hidden lg:flex aspect-square">
         <img
-          src="/img/stanzadeibalocchi5x1000.jpg"
-          alt="Immagine con informazioni sul 5x1000"
+          :src="bannerImg"
+          :alt="altbannerImg"
           class="border-white border-8 rounded-xl h-80 w-80"
         />
       </div>
@@ -51,6 +52,6 @@
 
 <script>
 export default {
-  props: ["subtitle", "title"],
+  props: ["subtitle", "title", "bannerImg", "altbannerImg"],
 };
 </script>
