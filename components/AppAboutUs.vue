@@ -2,7 +2,16 @@
   <div class="max-w-7xl mx-auto">
     <div :style="{ backgroundImage: `url(${imageBg})` }" class="bg-cover">
       <div class="backdrop-blur-sm">
-        <div class="bg-white w-9/12 mx-auto">
+        <div class="bg-white md:w-8/12 w-full mx-auto text-center">
+          <div class="p-7">
+            <h3 class="text-2xl font-bold">Chi siamo</h3>
+            <br />
+            <cite class="text-sm text-gray-500"
+              >Discorso della fondatrice in occasione della Giornata azzurra
+              sull’autismo gestita dal tavolo di lavoro sulla disabilità del
+              comune di giaveno</cite
+            >
+          </div>
           <div
             class="bg-white p-5 w-8/12 mx-auto text-center h-96 overflow-y-scroll"
           >
@@ -49,7 +58,7 @@ export default {
         }
       }
 
-      if (inList) html += "</ul>"; // Chiudi lista se file finisce con una lista
+      if (inList) html += "</ul>";
 
       document.getElementById("text").innerHTML = html;
     },
