@@ -20,7 +20,7 @@
           <img
             :src="image.url"
             alt="Galleria immagini"
-            class="rounded-3xl p-2 border-2 border-gray-300 bg-white aspect-square"
+            class="rounded-3xl p-2 border-2 border-gray-300 bg-white aspect-square max-w-40"
           />
         </div>
       </template>
