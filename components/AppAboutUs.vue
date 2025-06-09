@@ -1,21 +1,30 @@
 <template>
   <div class="max-w-7xl mx-auto">
     <div :style="{ backgroundImage: `url(${imageBg})` }" class="bg-cover">
-      <div class="backdrop-blur-sm">
+      <div class="group backdrop-blur-sm">
         <div class="bg-white md:w-8/12 w-full mx-auto text-center">
-          <div class="p-7">
+          <div class="p-5">
             <h3 class="text-2xl font-bold">Chi siamo</h3>
             <br />
-            <cite class="text-sm text-gray-500"
-              >Discorso della fondatrice in occasione della Giornata azzurra
+            <cite
+              class="text-sm text-gray-500 group-hover:text-blue-700 delay-100"
+            >
+              Discorso della presidente in occasione della Giornata azzurra
               sull’autismo gestita dal tavolo di lavoro sulla disabilità del
               comune di giaveno</cite
             >
           </div>
           <div
-            class="bg-white p-5 w-8/12 mx-auto text-center h-96 overflow-y-scroll"
+            class="bg-white p-5 w-8/12 mx-auto text-center h-96 overflow-y-scroll no-scrollbar"
           >
             <p id="text"></p>
+          </div>
+          <div>
+            <p
+              class="text-sm text-gray-500 translate-x-32 w-60 mx-auto p-8 group-hover:text-blue-700 delay-100"
+            >
+              Tiziana D. Clemente
+            </p>
           </div>
         </div>
       </div>
