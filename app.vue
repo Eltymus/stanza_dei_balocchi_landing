@@ -15,7 +15,7 @@
         bannerImg="/img/stanzadeibalocchi5x1000.jpg"
         altbannerImg="Immagine del banner per il 5x1000 della Stanza dei Balocchi"
       />
-      <AppAboutUs imageBg="'/img/Mano colorata senza sfondo.png'" />
+      <!-- <AppAboutUs imageBg="'/img/Mano colorata senza sfondo.png'" /> -->
       <AppGallery
         :right="true"
         :title="'Attività per i bambini e ragazzi'"
