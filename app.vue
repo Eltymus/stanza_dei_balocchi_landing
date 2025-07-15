@@ -43,23 +43,3 @@
     </NuxtLayout>
   </div>
 </template>
-
-<script setup lang="ts">
-useSeoMeta({
-  title:
-    "La Stanza dei Balocchi – Supporto alle famiglie con persone autistiche",
-  ogTitle: "La Stanza dei Balocchi – Inclusione e supporto",
-  description:
-    "La Stanza dei Balocchi è un'associazione dedicata al supporto delle famiglie con persone autistiche. Scopri progetti, eventi e attività inclusive.",
-  ogDescription:
-    "Supportiamo le famiglie con persone autistiche attraverso iniziative sociali e culturali.",
-  ogImage: "img/stanzadeibalocchi5x1000.jpg",
-  ogUrl: "www.stanzadeibalocchi.it",
-  ogType: "website",
-  twitterCard: "summary_large_image",
-  twitterTitle: "La Stanza dei Balocchi",
-  twitterDescription:
-    "Un'associazione per famiglie con membri autistici. Scopri le nostre attività e unisciti a noi.",
-  twitterImage: "img/stanzadeibalocchi5x1000.jpg",
-});
-</script>
