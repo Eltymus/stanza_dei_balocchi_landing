@@ -20,7 +20,7 @@
           <img
             :src="image.url"
             alt="Galleria immagini"
-            class="rounded-3xl p-2 border-2 border-gray-300 bg-white aspect-square max-w-32 hover:scale-105 hover:border-none duration-100"
+            class="rounded-3xl p-2 border-2 border-gray-300 bg-white aspect-square md:max-w-32 sm:max-w-28 hover:scale-105 hover:border-none duration-100"
           />
         </div>
       </template>
