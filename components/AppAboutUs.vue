@@ -18,11 +18,11 @@
             <p id="text" class="text-wrap"></p>
           </div>
           <div>
-            <p
+            <!-- <p
               class="text-sm text-gray-500 md:translate-x-32 sm:translate-x-0 w-60 mx-auto p-8 group-hover:text-blue-700 delay-100"
             >
               {{ author }}
-            </p>
+            </p> -->
           </div>
         </div>
       </div>
