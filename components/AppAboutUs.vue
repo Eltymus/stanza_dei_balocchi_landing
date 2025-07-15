@@ -4,26 +4,24 @@
       <div class="group backdrop-blur-sm">
         <div class="bg-white md:w-8/12 w-full mx-auto text-center">
           <div class="p-5">
-            <h3 class="text-2xl font-bold">Chi siamo</h3>
+            <h3 class="text-2xl font-bold">{{ title }}</h3>
             <br />
             <cite
               class="text-sm text-gray-500 group-hover:text-blue-700 delay-100"
             >
-              Discorso della presidente in occasione della Giornata azzurra
-              sull’autismo gestita dal tavolo di lavoro sulla disabilità del
-              comune di giaveno</cite
+              {{ subtitle }}</cite
             >
           </div>
           <div
             class="bg-white p-5 w-8/12 mx-auto text-center h-96 overflow-y-scroll no-scrollbar"
           >
-            <p id="text"></p>
+            <p id="text" class="text-wrap"></p>
           </div>
           <div>
             <p
-              class="text-sm text-gray-500 translate-x-32 w-60 mx-auto p-8 group-hover:text-blue-700 delay-100"
+              class="text-sm text-gray-500 md:translate-x-32 sm:translate-x-0 w-60 mx-auto p-8 group-hover:text-blue-700 delay-100"
             >
-              Tiziana D. Clemente
+              {{ author }}
             </p>
           </div>
         </div>
@@ -33,13 +31,13 @@
 </template>
 <script>
 export default {
-  props: ["imageBg"],
+  props: ["imageBg", "doc", "author", "subtitle", "title"],
   mounted() {
     this.loadText();
   },
   methods: {
     async loadText() {
-      const rawText = await (await fetch("discorso.txt")).text();
+      const rawText = await (await fetch(this.doc)).text();
       const lines = rawText.split("\n");
 
       let html = "";
