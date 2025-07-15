@@ -4,7 +4,7 @@
       <img
         :src="image.url"
         alt="Immagine eventi dei ragazzi"
-        class="rounded-3xl m-4 p-2 border-2 border-gray-300 bg-white"
+        class="rounded-3xl m-4 p-2 border-2 border-gray-300 bg-white hover:shadow-xl duration-300 aspect-auto"
       />
     </Slide>
   </Carousel>
@@ -20,7 +20,7 @@
           <img
             :src="image.url"
             alt="Galleria immagini"
-            class="rounded-3xl p-2 border-2 border-gray-300 bg-white aspect-square max-w-40"
+            class="rounded-3xl p-2 border-2 border-gray-300 bg-white aspect-square max-w-32 hover:scale-105 hover:border-none duration-100"
           />
         </div>
       </template>
