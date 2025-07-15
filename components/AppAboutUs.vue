@@ -5,12 +5,12 @@
         <div class="bg-white md:w-8/12 w-full mx-auto text-center">
           <div class="p-5">
             <h3 class="text-2xl font-bold">{{ title }}</h3>
-            <br />
-            <cite
+            <!-- <br /> -->
+            <!-- <cite
               class="text-sm text-gray-500 group-hover:text-blue-700 delay-100"
             >
               {{ subtitle }}</cite
-            >
+            > -->
           </div>
           <div
             class="bg-white p-5 w-8/12 mx-auto text-center h-96 overflow-y-scroll no-scrollbar"
